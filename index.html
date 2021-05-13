@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="scss/style.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+   <title>Visible Games</title>
+</head>
+<body>
+   <header>
+      <div class="container">
+         <div class="container__header">
+            <div class="input__search">
+               <input type="text" placeholder="Search" id="search__games">
+               <button>
+                  <svg width="43" height="44" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g clip-path="url(#clip0)">
+                     <path d="M28.7165 5.03468C22.1568 -1.67758 11.4804 -1.67758 4.92067 5.03468C-1.63762 11.7484 -1.63762 22.6716 4.92067 29.3854C10.7623 35.3614 19.8603 36.0016 26.4157 31.3352C26.5536 32.003 26.8693 32.6404 27.377 33.1598L36.93 42.935C38.3221 44.3566 40.5717 44.3566 41.9568 42.935C43.3475 41.512 43.3475 39.21 41.9568 37.7913L32.4038 28.0132C31.8989 27.4981 31.2747 27.1736 30.622 27.0325C35.1852 20.3232 34.5595 11.015 28.7165 5.03468ZM25.7004 26.2991C20.803 31.3104 12.8327 31.3104 7.93674 26.2991C3.0422 21.2879 3.0422 13.1336 7.93674 8.12235C12.8327 3.11253 20.803 3.11253 25.7004 8.12235C30.5978 13.1336 30.5978 21.2879 25.7004 26.2991Z" fill="black"/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0">
+                     <rect width="43" height="44" fill="white"/>
+                     </clipPath>
+                     </defs>
+                  </svg>      
+               </button>
+            </div>
+            <h1>VISIBLE</h1>
+            <div class="form-registration">
+               <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.79026 37.6941L9.63146 37.9931L9.85016 38.2515C13.4887 42.5516 18.9282 45.3036 25 45.3036C31.0718 45.3036 36.5113 42.5516 40.1498 38.2515L40.3685 37.9931L40.2097 37.6941C38.2335 33.9728 34.3601 31.4003 29.8387 31.4003C29.5416 31.4003 29.2506 31.4498 28.9774 31.5329L28.9774 31.5328L28.9682 31.5358C27.7065 31.9466 26.3783 32.2068 25 32.2068C23.6222 32.2068 22.3039 31.9468 21.0307 31.5354L21.0308 31.5354L21.0226 31.5329C20.7494 31.4498 20.4584 31.4003 20.1613 31.4003C15.6399 31.4003 11.7665 33.9728 9.79026 37.6941ZM0.5 25.4487C0.5 11.9144 11.4657 0.94873 25 0.94873C38.5343 0.94873 49.5 11.9144 49.5 25.4487C49.5 38.9831 38.5343 49.9487 25 49.9487C11.4657 49.9487 0.5 38.9831 0.5 25.4487ZM34.371 18.9971C34.371 13.8218 30.1753 9.62615 25 9.62615C19.8247 9.62615 15.629 13.8218 15.629 18.9971C15.629 24.1725 19.8247 28.3681 25 28.3681C30.1753 28.3681 34.371 24.1725 34.371 18.9971Z" fill="#3366FF" stroke="#3366FF"/>
+               </svg> 
+            </div>
+            <div class="hamburger">
+               <div class="hamburger__container">
+                  <span></span>
+               </div>
+            </div>    
+         </div>
+      </div>
+   </header>
+   <div class="header__navigation">
+      <div class="container">
+         <ul class="nav__header">
+               <li>
+                  <a href="#" class="hover__bag">
+                     Home
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="hover__bag">
+                     Games
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="hover__bag">
+                     About us
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="hover__bag">
+                     Contacts
+                  </a>
+               </li>
+         </ul>
+      </div>
+   </div>
+   <div class="categories__mobile">
+      <div class="categories__button">
+         <h2>Categories</h2>
+      </div>
+      <ul class="categories__select">
+         <li class="aside__search" data-let="all">
+            <p>
+               All games
+            </p>
+         </li>
+         <li class="aside__search" data-let="new">
+            <p>
+               New
+            </p>
+         </li>
+         <li class="aside__search" data-let="1">
+            <p>
+               Available
+            </p>
+         </li>
+         <li class="aside__search" data-let="2">
+            <p>
+               Arcade
+            </p>
+         </li>
+         <li class="aside__search" data-let="3">
+            <p>
+               Thriller
+            </p>
+         </li>
+         <li class="aside__search" data-let="4">
+            <p>
+               Quiz
+            </p>
+         </li>
+         <li class="aside__search" data-let="5">
+            <p>
+               Sport
+            </p>
+         </li>
+      </ul>
+   </div>
+   <div class="wraper">
+      <div class="container">
+         <aside>
+            <div class="aside__container">
+               <h2>Categories</h2>
+               <ul class="aside__nav">
+                  <li class="aside__search" data-let="all">
+                     <p>
+                        All games
+                     </p>
+                  </li>
+                  <li class="aside__search" data-let="new">
+                     <p>
+                        New
+                     </p>
+                  </li>
+                  <li class="aside__search" data-let="1">
+                     <p>
+                        Available
+                     </p>
+                  </li>
+                  <li class="aside__search" data-let="2">
+                     <p>
+                        Arcade
+                     </p>
+                  </li>
+                  <li class="aside__search" data-let="3">
+                     <p>
+                        Thriller
+                     </p>
+                  </li>
+                  <li class="aside__search" data-let="4">
+                     <p>
+                        Quiz
+                     </p>
+                  </li>
+                  <li class="aside__search" data-let="5">
+                     <p>
+                        Sport
+                     </p>
+                  </li>
+               </ul>
+            </div>
+         </aside>
+         <div class="games__container">
+            <div class="games__elements" data-let="2">
+               <div class="games__image">
+                  <img src="assets/games(1).png" alt="games(1)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(1).png" alt="games__small(1)">
+                  <div class="games__aside">
+                     <p class="games__name">Capture.io</p>
+                     <p class="games__company">Dra</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="2">
+               <div class="games__image">
+                  <img src="assets/games(2).png" alt="games(2)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(2).png" alt="games__small(2)">
+                  <div class="games__aside">
+                     <p class="games__name">Crazy Roll</p>
+                     <p class="games__company">JulGames</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="2">
+               <div class="games__image">
+                  <img src="assets/games(3).png" alt="games(2)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(3).png" alt="games__small(3)">
+                  <div class="games__aside">
+                     <p class="games__name">Vex 3</p>
+                     <p class="games__company">Orange Games</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="2">
+               <div class="games__image">
+                  <img src="assets/games(4).png" alt="games(4)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(4).png" alt="games__small(4)">
+                  <div class="games__aside">
+                     <p class="games__name">Gunblood</p>
+                     <p class="games__company">Orange Games</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="2">
+               <div class="games__image">
+                  <img src="assets/games(5).png" alt="games(5)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(5).png" alt="games__small(5)">
+                  <div class="games__aside">
+                     <p class="games__name">Tenkyu Ball</p>
+                     <p class="games__company">WebGameApp</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="2">
+               <div class="games__image">
+                  <img src="assets/games(6).png" alt="games(6)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(6).png" alt="games__small(6)">
+                  <div class="games__aside">
+                     <p class="games__name">Snow War.io</p>
+                     <p class="games__company">JulGames</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="2">
+               <div class="games__image">
+                  <img src="assets/games(7).png" alt="games(7)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(7).png" alt="games__small(7)">
+                  <div class="games__aside">
+                     <p class="games__name">Stack the Burger</p>
+                     <p class="games__company">MarketJS</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="2">
+               <div class="games__image">
+                  <img src="assets/games(8).png" alt="games(8)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(8).png" alt="games__small(8)">
+                  <div class="games__aside">
+                     <p class="games__name">PacRat</p>
+                     <p class="games__company">CodeThisLab</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="1" id="goUrl">
+               <div class="games__image">
+                  <img src="assets/games(9).png" alt="games(9)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(9).png" alt="games__small(9)">
+                  <div class="games__aside">
+                     <p class="games__name">Tic-Tac-Toe</p>
+                     <p class="games__company">Visible</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="3">
+               <div class="games__image">
+                  <img src="assets/games(10).png" alt="games(10)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(10).png" alt="games__small(10)">
+                  <div class="games__aside">
+                     <p class="games__name">ShooterZ.io</p>
+                     <p class="games__company">JulGames</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="3">
+               <div class="games__image">
+                  <img src="assets/games(11).png" alt="games(11)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(11).png" alt="games__small(11)">
+                  <div class="games__aside">
+                     <p class="games__name">Mob City</p>
+                     <p class="games__company">JulGames</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="3">
+               <div class="games__image">
+                  <img src="assets/games(12).png" alt="games(12)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(12).png" alt="games__small(12)">
+                  <div class="games__aside">
+                     <p class="games__name">Sniper Reloaded</p>
+                     <p class="games__company">JulGames</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="3">
+               <div class="games__image">
+                  <img src="assets/games(13).png" alt="games(13)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(13).png" alt="games__small(13)">
+                  <div class="games__aside">
+                     <p class="games__name">Tank Battle</p>
+                     <p class="games__company">JairoGames</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="3">
+               <div class="games__image">
+                  <img src="assets/games(14).png" alt="games(14)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(14).png" alt="games__small(14)">
+                  <div class="games__aside">
+                     <p class="games__name">Tank Mix</p>
+                     <p class="games__company">Persona Games</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="3">
+               <div class="games__image">
+                  <img src="assets/games(15).png" alt="games(15)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(15).png" alt="games__small(15)">
+                  <div class="games__aside">
+                     <p class="games__name">Mafia City 2</p>
+                     <p class="games__company">Ecaps Games</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="3">
+               <div class="games__image">
+                  <img src="assets/games(16).png" alt="games(16)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(16).png" alt="games__small(16)">
+                  <div class="games__aside">
+                     <p class="games__name">Death Racing</p>
+                     <p class="games__company">JulGames</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="4">
+               <div class="games__image">
+                  <img src="assets/games(17).png" alt="games(17)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(17).png" alt="games__small(17)">
+                  <div class="games__aside">
+                     <p class="games__name">Words and Words</p>
+                     <p class="games__company">Jtaugner</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="4">
+               <div class="games__image">
+                  <img src="assets/games(18).png" alt="games(18)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(18).png" alt="games__small(18)">
+                  <div class="games__aside">
+                     <p class="games__name">Guess the melody</p>
+                     <p class="games__company">AppyApp</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="4">
+               <div class="games__image">
+                  <img src="assets/games(19).png" alt="games(19)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(19).png" alt="games__small(19)">
+                  <div class="games__aside">
+                     <p class="games__name">Guess the money</p>
+                     <p class="games__company">Quiz 101</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="4">
+               <div class="games__image">
+                  <img src="assets/games(20).png" alt="games(20)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(20).png" alt="games__small(20)">
+                  <div class="games__aside">
+                     <p class="games__name">Search the words</p>
+                     <p class="games__company">JairoGames</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="4">
+               <div class="games__image">
+                  <img src="assets/games(21).png" alt="games(21)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(21).png" alt="games__small(21)">
+                  <div class="games__aside">
+                     <p class="games__name">Gallows</p>
+                     <p class="games__company">Jtaugner</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="4">
+               <div class="games__image">
+                  <img src="assets/games(22).png" alt="games(22)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(22).png" alt="games__small(22)">
+                  <div class="games__aside">
+                     <p class="games__name">Guess the dog</p>
+                     <p class="games__company">Quiz 101</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="4">
+               <div class="games__image">
+                  <img src="assets/games(23).png" alt="games(23)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(23).png" alt="games__small(23)">
+                  <div class="games__aside">
+                     <p class="games__name">Guess the app</p>
+                     <p class="games__company">JairoGames</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="4">
+               <div class="games__image">
+                  <img src="assets/games(24).png" alt="games(24)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(24).png" alt="games__small(24)">
+                  <div class="games__aside">
+                     <p class="games__name">Contries.wl</p>
+                     <p class="games__company">SunnyBear</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="5">
+               <div class="games__image">
+                  <img src="assets/games(25).png" alt="games(25)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(25).png" alt="games__small(25)">
+                  <div class="games__aside">
+                     <p class="games__name">Penalty shootout</p>
+                     <p class="games__company">CodeThisLab</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="5">
+               <div class="games__image">
+                  <img src="assets/games(26).png" alt="games(26)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(26).png" alt="games__small(26)">
+                  <div class="games__aside">
+                     <p class="games__name">Foosball</p>
+                     <p class="games__company">JairoGames</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="5">
+               <div class="games__image">
+                  <img src="assets/games(27).png" alt="games(27)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(27).png" alt="games__small(27)">
+                  <div class="games__aside">
+                     <p class="games__name">Micro-football</p>
+                     <p class="games__company">CodeThisLab</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="5">
+               <div class="games__image">
+                  <img src="assets/games(28).png" alt="games(28)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(28).png" alt="games__small(28)">
+                  <div class="games__aside">
+                     <p class="games__name">Box</p>
+                     <p class="games__company">JairoGames</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="5">
+               <div class="games__image">
+                  <img src="assets/games(29).png" alt="games(29)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(29).png" alt="games__small(29)">
+                  <div class="games__aside">
+                     <p class="games__name">Wrestle Jump</p>
+                     <p class="games__company">WebgameApp</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="5">
+               <div class="games__image">
+                  <img src="assets/games(30).png" alt="games(30)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(30).png" alt="games__small(30)">
+                  <div class="games__aside">
+                     <p class="games__name">Monster Track </p>
+                     <p class="games__company">Ecaps Games</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="5">
+               <div class="games__image">
+                  <img src="assets/games(31).png" alt="games(31)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(31).png" alt="games__small(31)">
+                  <div class="games__aside">
+                     <p class="games__name">Darts</p>
+                     <p class="games__company">MarketJS</p>
+                  </div>
+               </div>
+            </div>
+            <div class="games__elements" data-let="5">
+               <div class="games__image">
+                  <img src="assets/games(32).png" alt="games(32)">
+                  <a href="">
+                     <p>
+                        <span>
+                           PLAY
+                        </span>
+                     </p>
+                  </a>
+               </div>
+               <div class="games__information">
+                  <img src="assets/games__small(32).png" alt="games__small(32)">
+                  <div class="games__aside">
+                     <p class="games__name">Basketball</p>
+                     <p class="games__company">Onduck</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="slider__wraper">
+      <div class="slider__buttons">
+         <div class="slider__button" id="caroosel__prev">
+            <svg id="caroosel__prev" width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path id="caroosel__prev" fill-rule="evenodd" clip-rule="evenodd" d="M11.9308 0.119971C12.1129 0.199174 12.2784 0.315255 12.4177 0.461565C12.5573 0.607505 12.6681 0.780876 12.7437 0.971748C12.8193 1.16262 12.8582 1.36724 12.8582 1.57389C12.8582 1.78055 12.8193 1.98517 12.7437 2.17604C12.6681 2.36691 12.5573 2.54028 12.4177 2.68622L6.38999 9H23.5406C23.965 9 24.3719 9.21071 24.672 9.58579C24.9721 9.96086 25.1406 10.4696 25.1406 11C25.1406 11.5304 24.9721 12.0391 24.672 12.4142C24.3719 12.7893 23.965 13 23.5406 13H6.3892L12.4177 19.3146C12.6992 19.6096 12.8574 20.0097 12.8574 20.4269C12.8574 20.8441 12.6992 21.2443 12.4177 21.5393C12.1361 21.8343 11.7543 22 11.3561 22C10.958 22 10.5762 21.8343 10.2946 21.5393L1.29864 12.1127C1.15902 11.9668 1.04824 11.7934 0.972651 11.6026C0.897066 11.4117 0.858158 11.2071 0.858158 11.0004C0.858158 10.7938 0.897066 10.5891 0.972651 10.3983C1.04824 10.2074 1.15902 10.034 1.29864 9.88808L10.2946 0.461565C10.4339 0.315255 10.5994 0.199174 10.7815 0.119971C10.9637 0.0407677 11.1589 0 11.3561 0C11.5534 0 11.7486 0.0407677 11.9308 0.119971Z" fill="#3366FF"/>
+            </svg>
+         </div>
+         <div id="caroosel__rev" class="slider__button">
+            <svg id="caroosel__rev" width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path id="caroosel__rev" fill-rule="evenodd" clip-rule="evenodd" d="M14.0692 0.119971C13.8871 0.199174 13.7216 0.315255 13.5823 0.461565C13.4427 0.607505 13.3319 0.780876 13.2563 0.971748C13.1807 1.16262 13.1418 1.36724 13.1418 1.57389C13.1418 1.78055 13.1807 1.98517 13.2563 2.17604C13.3319 2.36691 13.4427 2.54028 13.5823 2.68622L19.61 9H2.45938C2.03503 9 1.62806 9.21071 1.328 9.58579C1.02795 9.96086 0.859375 10.4696 0.859375 11C0.859375 11.5304 1.02795 12.0391 1.328 12.4142C1.62806 12.7893 2.03503 13 2.45938 13H19.6108L13.5823 19.3146C13.3008 19.6096 13.1426 20.0097 13.1426 20.4269C13.1426 20.8441 13.3008 21.2443 13.5823 21.5393C13.8639 21.8343 14.2457 22 14.6439 22C15.042 22 15.4238 21.8343 15.7054 21.5393L24.7014 12.1127C24.841 11.9668 24.9518 11.7934 25.0273 11.6026C25.1029 11.4117 25.1418 11.2071 25.1418 11.0004C25.1418 10.7938 25.1029 10.5891 25.0273 10.3983C24.9518 10.2074 24.841 10.034 24.7014 9.88808L15.7054 0.461565C15.5661 0.315255 15.4006 0.199174 15.2185 0.119971C15.0363 0.0407677 14.8411 0 14.6439 0C14.4466 0 14.2514 0.0407677 14.0692 0.119971Z" fill="#3366FF"/>
+            </svg>
+         </div>
+      </div>
+      <div class="slider__content">
+         <div class="slider__tracker">
+            <div class="slider__elements">
+               <div class="comment__box">
+                  <svg width="60" height="46" viewBox="0 0 60 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M20.8247 20.52C23.0647 21.56 24.7847 23.12 25.9847 25.2C27.2647 27.2 27.9047 29.56 27.9047 32.28C27.9047 36.28 26.6247 39.52 24.0647 42C21.5047 44.48 18.2247 45.72 14.2247 45.72C10.2247 45.72 6.94469 44.48 4.38469 42C1.82469 39.52 0.544688 36.28 0.544688 32.28C0.544688 30.44 0.784688 28.6 1.26469 26.76C1.74469 24.92 2.82469 22.2 4.50469 18.6L12.1847 0.959995H26.4647L20.8247 20.52ZM52.2647 20.52C54.5047 21.56 56.2247 23.12 57.4247 25.2C58.7047 27.2 59.3447 29.56 59.3447 32.28C59.3447 36.28 58.0647 39.52 55.5047 42C52.9447 44.48 49.6647 45.72 45.6647 45.72C41.6647 45.72 38.3847 44.48 35.8247 42C33.2647 39.52 31.9847 36.28 31.9847 32.28C31.9847 30.44 32.2247 28.6 32.7047 26.76C33.1847 24.92 34.2647 22.2 35.9447 18.6L43.6247 0.959995H57.9047L52.2647 20.52Z" fill="#3366FF"/>
+                  </svg>
+                     
+                  <p class="comment__date">
+                     New Jersey, June 2020
+                  </p>
+                  <p class="comment__text">
+                     I am writing to thank you for your mission is to bring people closer to nature! Like myself, children were very impressed by the opportunity to explore the life of incredible animals in real-time. 
+                  </p>
+                  <p class="comment__name">
+                     Karen Maithlan
+                  </p>
+               </div>
+            </div>
+            <div class="slider__elements">
+               <div class="comment__box">
+                  <svg width="60" height="46" viewBox="0 0 60 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M20.8247 20.52C23.0647 21.56 24.7847 23.12 25.9847 25.2C27.2647 27.2 27.9047 29.56 27.9047 32.28C27.9047 36.28 26.6247 39.52 24.0647 42C21.5047 44.48 18.2247 45.72 14.2247 45.72C10.2247 45.72 6.94469 44.48 4.38469 42C1.82469 39.52 0.544688 36.28 0.544688 32.28C0.544688 30.44 0.784688 28.6 1.26469 26.76C1.74469 24.92 2.82469 22.2 4.50469 18.6L12.1847 0.959995H26.4647L20.8247 20.52ZM52.2647 20.52C54.5047 21.56 56.2247 23.12 57.4247 25.2C58.7047 27.2 59.3447 29.56 59.3447 32.28C59.3447 36.28 58.0647 39.52 55.5047 42C52.9447 44.48 49.6647 45.72 45.6647 45.72C41.6647 45.72 38.3847 44.48 35.8247 42C33.2647 39.52 31.9847 36.28 31.9847 32.28C31.9847 30.44 32.2247 28.6 32.7047 26.76C33.1847 24.92 34.2647 22.2 35.9447 18.6L43.6247 0.959995H57.9047L52.2647 20.52Z" fill="#3366FF"/>
+                  </svg>
+                     
+                  <p class="comment__date">
+                     Toronto, November 2020
+                  </p>
+                  <p class="comment__text">
+                     We so enjoy the ever-evolving selection of animals from around the globe. THANK YOU for sharing these fascinating animal friends with us so that we may learn and increase our understanding of the animal kingdom.
+                  </p>
+                  <p class="comment__name">
+                     Tomas Ray
+                  </p>
+               </div>
+            </div>
+            <div class="slider__elements">
+               <div class="comment__box">
+                  <svg width="60" height="46" viewBox="0 0 60 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M20.8247 20.52C23.0647 21.56 24.7847 23.12 25.9847 25.2C27.2647 27.2 27.9047 29.56 27.9047 32.28C27.9047 36.28 26.6247 39.52 24.0647 42C21.5047 44.48 18.2247 45.72 14.2247 45.72C10.2247 45.72 6.94469 44.48 4.38469 42C1.82469 39.52 0.544688 36.28 0.544688 32.28C0.544688 30.44 0.784688 28.6 1.26469 26.76C1.74469 24.92 2.82469 22.2 4.50469 18.6L12.1847 0.959995H26.4647L20.8247 20.52ZM52.2647 20.52C54.5047 21.56 56.2247 23.12 57.4247 25.2C58.7047 27.2 59.3447 29.56 59.3447 32.28C59.3447 36.28 58.0647 39.52 55.5047 42C52.9447 44.48 49.6647 45.72 45.6647 45.72C41.6647 45.72 38.3847 44.48 35.8247 42C33.2647 39.52 31.9847 36.28 31.9847 32.28C31.9847 30.44 32.2247 28.6 32.7047 26.76C33.1847 24.92 34.2647 22.2 35.9447 18.6L43.6247 0.959995H57.9047L52.2647 20.52Z" fill="#3366FF"/>
+                  </svg>
+                     
+                  <p class="comment__date">
+                     New Jersey, June 2020
+                  </p>
+                  <p class="comment__text">
+                     I am writing to thank you for your mission is to bring people closer to nature! Like myself, children were very impressed by the opportunity to explore the life of incredible animals in real-time. 
+                  </p>
+                  <p class="comment__name">
+                     Karen Maithlan
+                  </p>
+               </div>
+            </div>
+            <div class="slider__elements">
+               <div class="comment__box">
+                  <svg width="60" height="46" viewBox="0 0 60 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M20.8247 20.52C23.0647 21.56 24.7847 23.12 25.9847 25.2C27.2647 27.2 27.9047 29.56 27.9047 32.28C27.9047 36.28 26.6247 39.52 24.0647 42C21.5047 44.48 18.2247 45.72 14.2247 45.72C10.2247 45.72 6.94469 44.48 4.38469 42C1.82469 39.52 0.544688 36.28 0.544688 32.28C0.544688 30.44 0.784688 28.6 1.26469 26.76C1.74469 24.92 2.82469 22.2 4.50469 18.6L12.1847 0.959995H26.4647L20.8247 20.52ZM52.2647 20.52C54.5047 21.56 56.2247 23.12 57.4247 25.2C58.7047 27.2 59.3447 29.56 59.3447 32.28C59.3447 36.28 58.0647 39.52 55.5047 42C52.9447 44.48 49.6647 45.72 45.6647 45.72C41.6647 45.72 38.3847 44.48 35.8247 42C33.2647 39.52 31.9847 36.28 31.9847 32.28C31.9847 30.44 32.2247 28.6 32.7047 26.76C33.1847 24.92 34.2647 22.2 35.9447 18.6L43.6247 0.959995H57.9047L52.2647 20.52Z" fill="#3366FF"/>
+                  </svg>
+                     
+                  <p class="comment__date">
+                     Toronto, November 2020
+                  </p>
+                  <p class="comment__text">
+                     We so enjoy the ever-evolving selection of animals from around the globe. THANK YOU for sharing these fascinating animal friends with us so that we may learn and increase our understanding of the animal kingdom.
+                  </p>
+                  <p class="comment__name">
+                     Tomas Ray
+                  </p>
+               </div>
+            </div>
+            <div class="slider__elements">
+               <div class="comment__box">
+                  <svg width="60" height="46" viewBox="0 0 60 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M20.8247 20.52C23.0647 21.56 24.7847 23.12 25.9847 25.2C27.2647 27.2 27.9047 29.56 27.9047 32.28C27.9047 36.28 26.6247 39.52 24.0647 42C21.5047 44.48 18.2247 45.72 14.2247 45.72C10.2247 45.72 6.94469 44.48 4.38469 42C1.82469 39.52 0.544688 36.28 0.544688 32.28C0.544688 30.44 0.784688 28.6 1.26469 26.76C1.74469 24.92 2.82469 22.2 4.50469 18.6L12.1847 0.959995H26.4647L20.8247 20.52ZM52.2647 20.52C54.5047 21.56 56.2247 23.12 57.4247 25.2C58.7047 27.2 59.3447 29.56 59.3447 32.28C59.3447 36.28 58.0647 39.52 55.5047 42C52.9447 44.48 49.6647 45.72 45.6647 45.72C41.6647 45.72 38.3847 44.48 35.8247 42C33.2647 39.52 31.9847 36.28 31.9847 32.28C31.9847 30.44 32.2247 28.6 32.7047 26.76C33.1847 24.92 34.2647 22.2 35.9447 18.6L43.6247 0.959995H57.9047L52.2647 20.52Z" fill="#3366FF"/>
+                  </svg>
+                     
+                  <p class="comment__date">
+                     New Jersey, June 2020
+                  </p>
+                  <p class="comment__text">
+                     I am writing to thank you for your mission is to bring people closer to nature! Like myself, children were very impressed by the opportunity to explore the life of incredible animals in real-time. 
+                  </p>
+                  <p class="comment__name">
+                     Karen Maithlan
+                  </p>
+               </div>
+            </div>
+            <div class="slider__elements">
+               <div class="comment__box">
+                  <svg width="60" height="46" viewBox="0 0 60 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M20.8247 20.52C23.0647 21.56 24.7847 23.12 25.9847 25.2C27.2647 27.2 27.9047 29.56 27.9047 32.28C27.9047 36.28 26.6247 39.52 24.0647 42C21.5047 44.48 18.2247 45.72 14.2247 45.72C10.2247 45.72 6.94469 44.48 4.38469 42C1.82469 39.52 0.544688 36.28 0.544688 32.28C0.544688 30.44 0.784688 28.6 1.26469 26.76C1.74469 24.92 2.82469 22.2 4.50469 18.6L12.1847 0.959995H26.4647L20.8247 20.52ZM52.2647 20.52C54.5047 21.56 56.2247 23.12 57.4247 25.2C58.7047 27.2 59.3447 29.56 59.3447 32.28C59.3447 36.28 58.0647 39.52 55.5047 42C52.9447 44.48 49.6647 45.72 45.6647 45.72C41.6647 45.72 38.3847 44.48 35.8247 42C33.2647 39.52 31.9847 36.28 31.9847 32.28C31.9847 30.44 32.2247 28.6 32.7047 26.76C33.1847 24.92 34.2647 22.2 35.9447 18.6L43.6247 0.959995H57.9047L52.2647 20.52Z" fill="#3366FF"/>
+                  </svg>
+                     
+                  <p class="comment__date">
+                     Toronto, November 2020
+                  </p>
+                  <p class="comment__text">
+                     We so enjoy the ever-evolving selection of animals from around the globe. THANK YOU for sharing these fascinating animal friends with us so that we may learn and increase our understanding of the animal kingdom.
+                  </p>
+                  <p class="comment__name">
+                     Tomas Ray
+                  </p>
+               </div>
+            </div>
+            <div class="slider__elements">
+               <div class="comment__box">
+                  <svg width="60" height="46" viewBox="0 0 60 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M20.8247 20.52C23.0647 21.56 24.7847 23.12 25.9847 25.2C27.2647 27.2 27.9047 29.56 27.9047 32.28C27.9047 36.28 26.6247 39.52 24.0647 42C21.5047 44.48 18.2247 45.72 14.2247 45.72C10.2247 45.72 6.94469 44.48 4.38469 42C1.82469 39.52 0.544688 36.28 0.544688 32.28C0.544688 30.44 0.784688 28.6 1.26469 26.76C1.74469 24.92 2.82469 22.2 4.50469 18.6L12.1847 0.959995H26.4647L20.8247 20.52ZM52.2647 20.52C54.5047 21.56 56.2247 23.12 57.4247 25.2C58.7047 27.2 59.3447 29.56 59.3447 32.28C59.3447 36.28 58.0647 39.52 55.5047 42C52.9447 44.48 49.6647 45.72 45.6647 45.72C41.6647 45.72 38.3847 44.48 35.8247 42C33.2647 39.52 31.9847 36.28 31.9847 32.28C31.9847 30.44 32.2247 28.6 32.7047 26.76C33.1847 24.92 34.2647 22.2 35.9447 18.6L43.6247 0.959995H57.9047L52.2647 20.52Z" fill="#3366FF"/>
+                  </svg>
+                     
+                  <p class="comment__date">
+                     New Jersey, June 2020
+                  </p>
+                  <p class="comment__text">
+                     I am writing to thank you for your mission is to bring people closer to nature! Like myself, children were very impressed by the opportunity to explore the life of incredible animals in real-time. 
+                  </p>
+                  <p class="comment__name">
+                     Karen Maithlan
+                  </p>
+               </div>
+            </div>
+            <div class="slider__elements">
+               <div class="comment__box">
+                  <svg width="60" height="46" viewBox="0 0 60 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M20.8247 20.52C23.0647 21.56 24.7847 23.12 25.9847 25.2C27.2647 27.2 27.9047 29.56 27.9047 32.28C27.9047 36.28 26.6247 39.52 24.0647 42C21.5047 44.48 18.2247 45.72 14.2247 45.72C10.2247 45.72 6.94469 44.48 4.38469 42C1.82469 39.52 0.544688 36.28 0.544688 32.28C0.544688 30.44 0.784688 28.6 1.26469 26.76C1.74469 24.92 2.82469 22.2 4.50469 18.6L12.1847 0.959995H26.4647L20.8247 20.52ZM52.2647 20.52C54.5047 21.56 56.2247 23.12 57.4247 25.2C58.7047 27.2 59.3447 29.56 59.3447 32.28C59.3447 36.28 58.0647 39.52 55.5047 42C52.9447 44.48 49.6647 45.72 45.6647 45.72C41.6647 45.72 38.3847 44.48 35.8247 42C33.2647 39.52 31.9847 36.28 31.9847 32.28C31.9847 30.44 32.2247 28.6 32.7047 26.76C33.1847 24.92 34.2647 22.2 35.9447 18.6L43.6247 0.959995H57.9047L52.2647 20.52Z" fill="#3366FF"/>
+                  </svg>
+                     
+                  <p class="comment__date">
+                     Toronto, November 2020
+                  </p>
+                  <p class="comment__text">
+                     We so enjoy the ever-evolving selection of animals from around the globe. THANK YOU for sharing these fascinating animal friends with us so that we may learn and increase our understanding of the animal kingdom.
+                  </p>
+                  <p class="comment__name">
+                     Tomas Ray
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <div class="container">
+         <div class="container__logs">
+            <div class="container__logs-log">
+               Visible
+            </div>
+            <nav class="container__logs-nav">
+               <ul>
+                  <li>
+                     <a href="#" id="scroolUpper">Home</a>
+                  </li>
+                  <li>
+                     <a href="#">Games</a>
+                  </li>
+                  <li>
+                     <a href="#">About Us</a>
+                  </li>
+                  <li>
+                     <a href="#">Contacts</a>
+                  </li>
+               </ul>
+            </nav>
+            <button class="container__logs-button" id="donation__popup">
+               <p class="nav-text">
+                  DONATE FOR SERVICE
+               </p>
+               <svg width="26" height="22" viewBox="0 0 26 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0687 0.119971C13.8866 0.199174 13.7211 0.315255 13.5818 0.461565C13.4422 0.607505 13.3314 0.780876 13.2558 0.971748C13.1803 1.16262 13.1414 1.36724 13.1414 1.57389C13.1414 1.78055 13.1803 1.98517 13.2558 2.17604C13.3314 2.36691 13.4422 2.54028 13.5818 2.68622L19.6095 9H2.45889C2.03454 9 1.62757 9.21071 1.32752 9.58579C1.02746 9.96086 0.858887 10.4696 0.858887 11C0.858887 11.5304 1.02746 12.0391 1.32752 12.4142C1.62757 12.7893 2.03454 13 2.45889 13H19.6103L13.5818 19.3146C13.3003 19.6096 13.1421 20.0097 13.1421 20.4269C13.1421 20.8441 13.3003 21.2443 13.5818 21.5393C13.8634 21.8343 14.2452 22 14.6434 22C15.0415 22 15.4234 21.8343 15.7049 21.5393L24.7009 12.1127C24.8405 11.9668 24.9513 11.7934 25.0269 11.6026C25.1024 11.4117 25.1414 11.2071 25.1414 11.0004C25.1414 10.7938 25.1024 10.5891 25.0269 10.3983C24.9513 10.2074 24.8405 10.034 24.7009 9.88808L15.7049 0.461565C15.5656 0.315255 15.4002 0.199174 15.218 0.119971C15.0359 0.0407677 14.8406 0 14.6434 0C14.4461 0 14.2509 0.0407677 14.0687 0.119971Z" fill="white"/>
+               </svg>    
+            </button>
+         </div>
+         <hr class="yper">
+         <div class="container__messengers">
+            <div class="container__messengers-private">
+               <p class="footer-text">
+                  © 2021 Zhilinskiy 
+               </p>
+            </div>
+            <hr class="hr__mess">
+            <nav class="container__messengers-icon">
+               <ul>
+                  <li id="first__bag">
+                     <a href="https://www.youtube.com/channel/UC578nebW2Mn-mNgjEArGZug" class="youtube">
+                        <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M24.3005 1.37807C24.6996 1.77717 24.9872 2.27386 25.1346 2.81868C25.9835 6.23572 25.7873 11.6324 25.1511 15.1813C25.0037 15.7261 24.7161 16.2228 24.317 16.6219C23.9179 17.021 23.4212 17.3086 22.8764 17.456C20.8819 18 12.8544 18 12.8544 18C12.8544 18 4.82691 18 2.8324 17.456C2.28759 17.3086 1.79089 17.021 1.39179 16.6219C0.992691 16.2228 0.705107 15.7261 0.557679 15.1813C-0.296167 11.7791 -0.0620999 6.37912 0.541197 2.83517C0.688622 2.29035 0.976206 1.79365 1.37531 1.39455C1.77441 0.99545 2.2711 0.707864 2.81592 0.560444C4.81043 0.0164795 12.8379 0 12.8379 0C12.8379 0 20.8654 0 22.8599 0.543954C23.4047 0.691384 23.9014 0.97897 24.3005 1.37807ZM16.9423 8.99999L10.283 12.8571V5.14285L16.9423 8.99999Z" fill="white"/>
+                        </svg>                              
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.instagram.com/v.zhilinskiy/?hl=ru" class="instagram"> 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M12 2.16215C15.2041 2.16215 15.5837 2.17439 16.849 2.23212C18.019 2.28547 18.6544 2.48096 19.0773 2.6453C19.6374 2.86299 20.0371 3.12302 20.457 3.54291C20.877 3.96286 21.137 4.3626 21.3547 4.92273C21.519 5.34557 21.7145 5.98096 21.7679 7.15095C21.8256 8.41629 21.8378 8.79584 21.8378 11.9999C21.8378 15.2041 21.8256 15.5836 21.7679 16.849C21.7145 18.019 21.519 18.6543 21.3547 19.0772C21.137 19.6373 20.877 20.0371 20.4571 20.457C20.0371 20.8769 19.6374 21.1369 19.0773 21.3546C18.6544 21.519 18.019 21.7144 16.849 21.7678C15.5839 21.8255 15.2044 21.8378 12 21.8378C8.79563 21.8378 8.41618 21.8255 7.15097 21.7678C5.98098 21.7144 5.34559 21.519 4.92274 21.3546C4.36261 21.1369 3.96287 20.8769 3.54297 20.457C3.12308 20.0371 2.863 19.6373 2.64531 19.0772C2.48097 18.6543 2.28548 18.019 2.23213 16.849C2.1744 15.5836 2.16216 15.2041 2.16216 11.9999C2.16216 8.79584 2.1744 8.41629 2.23213 7.15095C2.28548 5.98096 2.48097 5.34557 2.64531 4.92273C2.863 4.3626 3.12303 3.96286 3.54297 3.54296C3.96287 3.12302 4.36261 2.86299 4.92274 2.6453C5.34559 2.48096 5.98098 2.28547 7.15097 2.23212C8.41632 2.17439 8.79587 2.16215 12 2.16215ZM12 0C8.741 0 8.33234 0.0138138 7.05241 0.072213C5.77516 0.130469 4.90283 0.333342 4.13954 0.629958C3.35044 0.936626 2.68123 1.34694 2.01406 2.01406C1.34695 2.68122 0.936629 3.35043 0.630008 4.13953C0.333343 4.90282 0.13047 5.77514 0.0722133 7.05239C0.0138139 8.33231 0 8.74096 0 11.9999C0 15.259 0.0138139 15.6676 0.0722133 16.9475C0.13047 18.2248 0.333343 19.0971 0.630008 19.8604C0.936629 20.6495 1.34695 21.3187 2.01406 21.9859C2.68123 22.653 3.35044 23.0633 4.13954 23.3699C4.90283 23.6666 5.77516 23.8694 7.05241 23.9277C8.33234 23.9861 8.741 23.9999 12 23.9999C15.259 23.9999 15.6677 23.9861 16.9476 23.9277C18.2248 23.8694 19.0972 23.6666 19.8605 23.3699C20.6496 23.0633 21.3188 22.653 21.9859 21.9859C22.653 21.3187 23.0634 20.6495 23.37 19.8604C23.6667 19.0971 23.8695 18.2248 23.9278 16.9475C23.9862 15.6676 24 15.259 24 11.9999C24 8.74096 23.9862 8.33231 23.9278 7.05239C23.8695 5.77514 23.6667 4.90282 23.37 4.13953C23.0634 3.35043 22.653 2.68122 21.9859 2.01406C21.3188 1.34694 20.6496 0.936626 19.8605 0.629958C19.0972 0.333342 18.2248 0.130469 16.9476 0.072213C15.6677 0.0138138 15.259 0 12 0Z" fill="white"/>
+                           <path d="M12.0054 5.84326C8.60213 5.84326 5.84326 8.60212 5.84326 12.0054C5.84326 15.4087 8.60213 18.1675 12.0054 18.1675C15.4087 18.1675 18.1676 15.4087 18.1676 12.0054C18.1676 8.60212 15.4087 5.84326 12.0054 5.84326ZM12.0054 16.0054C9.79627 16.0054 8.00542 14.2145 8.00542 12.0054C8.00542 9.79626 9.79627 8.00541 12.0054 8.00541C14.2146 8.00541 16.0054 9.79626 16.0054 12.0054C16.0054 14.2145 14.2146 16.0054 12.0054 16.0054Z" fill="white"/>
+                           <path d="M19.8507 5.59627C19.8507 6.39152 19.206 7.03625 18.4107 7.03625C17.6154 7.03625 16.9707 6.39152 16.9707 5.59627C16.9707 4.80098 17.6154 4.15625 18.4107 4.15625C19.206 4.15625 19.8507 4.80098 19.8507 5.59627Z" fill="white"/>
+                        </svg>                              
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://www.facebook.com/RunovSchool/" class="facebook">
+                        <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" clip-rule="evenodd" d="M10.315 3.9578C9.6917 3.83314 8.84983 3.74 8.32037 3.74C6.8867 3.74 6.79358 4.36333 6.79358 5.36066V7.13607H10.3774L10.065 10.8137H6.79358V22H2.30632V10.8137H0L0 7.13607H2.30632V4.86127C2.30632 1.74533 3.77079 0 7.44771 0C8.72517 0 9.66017 0.187001 10.8753 0.436334L10.315 3.9578Z" fill="white"/>
+                        </svg>                              
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </footer>
+   <script src="./sctipts/script.js"></script>
+</body>
+</html>
